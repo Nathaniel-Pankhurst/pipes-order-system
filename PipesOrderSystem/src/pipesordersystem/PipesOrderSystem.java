@@ -5,6 +5,8 @@
  */
 package pipesordersystem;
 
+import pipesordersystem.gui.OrderWindow;
+
 /**
  *
  * @author milo
@@ -16,6 +18,12 @@ public class PipesOrderSystem {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+
+        Cart orderCart = new Cart();
+        
+        final OrderWindow window = new OrderWindow(orderCart);
+        window.setVisible(true);
+        
     }
     
 }
